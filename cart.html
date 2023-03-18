@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title> All Products details-RedStore</title>
+       <link rel="stylesheet" href="CSS/style.css">
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+
+       
+</head>
+<body>
+
+       <div class="container">
+                <div class="navbar">
+              <div class="logo">
+                     <img src="images/logo.png" width="125px">
+              </div>
+              <nav>
+                     <ul id="MenuItems">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Account</a></li>
+                          
+
+                     </ul>
+              </nav>
+              <img src="images/cart.png" width="30px" height="30px">
+              <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+       </div>
+       </div>      
+
+
+                     <!------------cart items details------- -- ------------>
+       <div class="small-container cart-page">
+              <table>
+                     <tr>
+                            
+                            <th>Products</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                     </tr>
+                     <tr>
+                           
+                            <td>
+                                   <div class="cart-info">
+                                     <img src="images/buy-1.jpg">
+                                     <div>
+                                            <p>Red Printed T-Shirt</p>
+                                            <small>Price:$10.00</small>
+                                            <br>
+                                            <a href="">Remove</a>
+                                     </div>
+                                   </div>
+                              </td>
+                              <td><input type="number" value="1"></td>
+                              <td>$10.00</td>
+                              
+                     </tr>
+                     <tr>
+                           
+                            <td>
+                                   <div class="cart-info">
+                                     <img src="images/buy-2.jpg">
+                                     <div>
+                                            <p>Man's Shoes</p>
+                                            <small>Price:$20.00</small>
+                                            <br>
+                                            <a href="">Remove</a>
+                                     </div>
+                                   </div>
+                              </td>
+                              <td><input type="number" value="1"></td>
+                              <td>$20.00</td>
+                              
+                     </tr>
+                     <tr>
+                           
+                            <td>
+                                   <div class="cart-info">
+                                     <img src="images/buy-3.jpg">
+                                     <div>
+                                            <p>Man's Jeans</p>
+                                            <small>Price:$30.00</small>
+                                            <br>
+                                            <a href="">Remove</a>
+                                     </div>
+                                   </div>
+                              </td>
+                              <td><input type="number" value="1"></td>
+                              <td>$30.00</td>
+                              
+                     </tr>
+              </table>
+
+              <div class="total-price">
+                     <table>
+                            <tr>
+                             <td>Subtotal</td>
+                             <td>$60.00</td>
+                            </tr>
+                            <tr>
+                                   <td>Tax</td>
+                                   <td>$30.00</td>
+                                  </tr>
+                                  <tr>
+                                   <td>Total</td>
+                                   <td>$90.00</td>
+                                  </tr>
+
+                     </table>
+              </div>
+       </div>
+
+
+
+
+                     <!-------------------- footer ------------------------->
+    <div class="row primary">
+       <div class="column about">
+           <h3>Connect</h3>
+           <p>
+               <i class="fa fa-map-marker" aria-hidden="true"></i>   Sienna Towers, Service Road, Bangalore
+           </p>
+           <div class="social">
+               <i class="fa fa-facebook-square"></i>
+               <i class="fa fa-twitter-square"></i>
+               <i class="fa fa-linkedin-square"></i>
+               <i class="fa fa-instagram"></i>
+           </div>
+       </div>
+   
+       <div class="column link">
+           <h3>Links</h3>
+           <ul>
+               <li><a href="#home">Home</a></li>
+               <li><a href="#team">Team</a></li>
+               <li><a href="#blogs">Blogs</a></li>
+               <li><a href="#support">Support</a></li>
+           </ul>
+       </div>
+   
+       <div class="column subscribe">
+           <h3>Newsletter</h3>
+           <div>
+              <input type="email" placeholder="Your email id here" />
+              <button>Subscribe</button>
+           </div>
+       </div>
+   </div>
+   
+           
+   </div>
+   <div class="row copyright">
+       <div class="footer-menu">
+     
+       <a href="">Home</a>
+       <a href="">F.A.Q</a>
+       <a href="">Cookies Policy</a>
+       <a href="">Terms Of Service</a>
+       <a href="">Support</a>
+     
+       </div>
+        <p>Copyright &copy; 2023</p>
+     </div>
+     <!-- ------js for toggle menu------ -->
+<script>
+var MenuItems=document.getElementById("MenuItems");
+
+MenuItems.style.maxHeight="0px";
+
+function menutoggle(){
+       if(  MenuItems.style.maxHeight=="0px")
+       {
+              MenuItems.style.maxHeight="200px"
+          }
+       else
+         { 
+              MenuItems.style.maxHeight="0px" 
+       }
+}
+</script>
+</body>
+</html>
